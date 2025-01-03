@@ -1,0 +1,32 @@
+{
+    "name": "vscode-cd-sync",
+    "displayName": "VS CD Sync",
+    "description": "Automatically synchronizes VS Code terminal with the file explorer.",
+    "version": "1.0.0",
+    "publisher": "Tim Condon",
+    "engines": {
+        "vscode": "^1.78.0"
+    },
+    "activationEvents": [
+        "onDidChangeActiveTextEditor"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.syncTerminalDirectory",
+                "title": "Sync Terminal to Selected Item"
+            }
+        ]
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Tim Condon",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://example.com/placeholder.git"
+    }
+}
